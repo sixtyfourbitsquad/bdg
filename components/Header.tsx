@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import CTA, { CTA_URL } from './CTA';
+import { CTA_URL } from './CTA';
 import Link from 'next/link';
 import Image from 'next/image';
 
