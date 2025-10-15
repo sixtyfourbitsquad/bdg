@@ -1,103 +1,86 @@
-import Image from "next/image";
+import CTA, { CTA_URL } from '@/components/CTA';
+import JsonLd from '@/components/JsonLd';
+import Link from 'next/link';
+import Image from 'next/image';
 
-export default function Home() {
+export default function Page(){
+
+  const jsonld = {
+    '@context':'https://schema.org',
+    '@type':'WebSite',
+    name:'BDG Win Game',
+    url:'https://bdgwinngames.com',
+    potentialAction:{ '@type':'SearchAction', target:'https://bdgwinngames.com/search?q={query}', 'query-input':'required name=query' }
+  };
+
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      <section className="pt-16 pb-10">
+        <div className="text-center max-w-3xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
+            BDG Game Download App | ₹300 Bonus | Official Login
+          </h1>
+          <p className="mt-5 text-lg opacity-80">
+            Download BDG Win Game in India. Fast login, signup bonus, colour prediction results, and secure withdrawals.
+          </p>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+            <CTA label="Play Now & Claim ₹300 Bonus" />
+            <a className="btn-gold" href={CTA_URL} target="_blank" rel="nofollow noopener">Login</a>
+            <a className="btn-gold" href={CTA_URL} target="_blank" rel="nofollow noopener">Download</a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <link rel="preload" as="image" href="/og-image.jpg" />
+        <Image src="/og-image.jpg" alt="BDG Game Download and Login Bonus" className="mx-auto mt-10 rounded-2xl border border-gold-100" priority width="1200" height="630"/>
+      </section>
+
+      <section className="grid md:grid-cols-2 gap-8 mt-8">
+        <div className="card">
+          <h2 className="text-2xl font-bold">How to Register</h2>
+          <ol className="list-decimal pl-5 mt-3 space-y-2">
+            <li>Click <a className="link-gold" href={CTA_URL} target="_blank" rel="nofollow noopener">Register Now</a>.</li>
+            <li>Fill mobile OTP and set password.</li>
+            <li>Claim signup bonus and start.</li>
+          </ol>
+        </div>
+        <div className="card">
+          <h2 className="text-2xl font-bold">How to Login</h2>
+          <p className="mt-2">Use your mobile number and password on the official BDG portal.</p>
+        </div>
+        <div className="card">
+          <h2 className="text-2xl font-bold">Why Choose BDG Game India</h2>
+          <ul className="list-disc pl-5 mt-2 space-y-1">
+            <li>Fast app download and updates</li><li>Referral and deposit bonuses</li><li>UPI/Paytm withdrawals</li>
+          </ul>
+        </div>
+        <div className="card">
+          <h2 className="text-2xl font-bold">Bonus & Referral Rewards</h2>
+          <p className="mt-2">New user bonus, referral bonus, periodic cashbacks. Terms vary.</p>
+        </div>
+      </section>
+
+      <section className="card mt-8">
+        <h2 className="text-2xl font-bold">Is BDG Game Safe?</h2>
+        <p className="mt-2">This site is informational and independent. Play responsibly. Verify app policies before deposits.</p>
+      </section>
+
+      <section className="mt-12">
+        <h2 className="text-2xl font-bold">Latest from Blog</h2>
+        <ul className="mt-4 list-disc pl-5">
+          <li><Link className="link-gold" href="/blog/how-to-login-bdg">How to Login to BDG Game</Link></li>
+          <li><Link className="link-gold" href="/blog/bdg-withdrawal-guide">BDG Withdrawal Guide</Link></li>
+          <li><Link className="link-gold" href="/blog/bdg-colour-prediction-tips">BDG Colour Prediction Tips</Link></li>
+        </ul>
+      </section>
+
+      <JsonLd json={jsonld} />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments)}
+          `
+        }}
+      />
+    </>
   );
 }
