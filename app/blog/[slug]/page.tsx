@@ -33,21 +33,43 @@ export default async function BlogPost({ params }:{ params: Promise<{ slug:strin
   };
   
   return (
-    <Prose className="max-w-3xl py-10">
-      <h1>{String(meta.title || '')}</h1>
-      <p className="opacity-60 text-sm mb-8">
-        Updated {new Date(String(meta.date || '')).toLocaleDateString()}
-      </p>
+    <div className="max-w-4xl mx-auto py-12">
+      {/* Article Header */}
+      <header className="mb-12 text-center">
+        <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+          {String(meta.title || '')}
+        </h1>
+        <div className="flex items-center justify-center gap-4 text-sm opacity-70">
+          <span className="flex items-center gap-2">
+            📅 <span>Updated {new Date(String(meta.date || '')).toLocaleDateString('en-IN', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric'
+            })}</span>
+          </span>
+          <span>•</span>
+          <span className="flex items-center gap-2">
+            ⏱️ <span>5 min read</span>
+          </span>
+        </div>
+      </header>
+
+      {/* Article Content */}
+      <Prose className="prose-lg prose-gold max-w-none">
+        <MDXRemote source={content} />
+      </Prose>
       
-      <MDXRemote source={content} />
-      
-      <div className="mt-12 text-center">
-        <h2 className="text-2xl font-bold mb-4">Ready to Try BDG Game?</h2>
-        <CTA label="Start Playing BDG" />
+      {/* Call to Action */}
+      <div className="mt-16 text-center bg-gradient-to-r from-gold-50 to-gold-100 rounded-2xl p-8 border border-gold-200">
+        <h2 className="text-2xl font-bold mb-4 text-gold-800">Ready to Try BDG Game?</h2>
+        <p className="text-gold-700 mb-6 opacity-80">
+          Start your gaming journey with our exclusive ₹500 bonus offer!
+        </p>
+        <CTA label="Register & Claim ₹500 Bonus" />
       </div>
       
       <JsonLd json={breadcrumb} />
       <JsonLd json={article} />
-    </Prose>
+    </div>
   );
 }
