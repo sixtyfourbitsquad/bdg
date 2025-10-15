@@ -15,7 +15,7 @@ export default function Page(){
 
   return (
     <>
-      <section className="pt-16 pb-10">
+      <section className="pt-8 pb-10">
         <div className="text-center max-w-3xl mx-auto">
           {/* Top Action Buttons */}
           <div className="mb-8 flex flex-wrap items-center justify-center gap-4">
