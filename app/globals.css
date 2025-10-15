@@ -33,6 +33,30 @@ body {
   50% { transform: translateY(-10px); }
 }
 
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 5px rgba(212, 175, 55, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(212, 175, 55, 0.6), 0 0 30px rgba(212, 175, 55, 0.4); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    transform: scale(1);
+  }
+  50% { 
+    box-shadow: 0 6px 25px rgba(212, 175, 55, 0.5);
+    transform: scale(1.02);
+  }
+}
+
 .floating-button {
   animation: float 3s ease-in-out infinite;
+}
+
+.shine-button {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.shine-button:hover {
+  animation: glow 1s ease-in-out infinite;
 }

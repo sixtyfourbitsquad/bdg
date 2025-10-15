@@ -7,6 +7,11 @@ export const metadata = {
   metadataBase: new URL('https://bdgwinngames.com'),
   title: 'BDG Win Game — Official Login, Download App & ₹500 Bonus',
   description: 'BDG Win Game (Big Daddy Game) — official info hub for login, download, bonus, colour prediction and withdrawals in India. Register now and claim your ₹500 bonus.',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/logo.png',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
