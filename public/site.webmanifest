@@ -1,0 +1,22 @@
+{
+  "name": "BDG Win Game - Official Login & Download",
+  "short_name": "BDG Game",
+  "description": "BDG Win Game official platform for login, download, bonus offers and colour prediction in India",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#D4AF37",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}
