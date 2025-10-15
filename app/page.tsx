@@ -23,14 +23,21 @@ export default function Page(){
           <p className="mt-5 text-lg opacity-80">
             Download BDG Win Game in India. Fast login, signup bonus, colour prediction results, and secure withdrawals.
           </p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <CTA label="Play Now & Claim ₹500 Bonus" />
-            <a className="btn-gold" href={CTA_URL} target="_blank" rel="nofollow noopener">Login</a>
-            <a className="btn-gold" href={CTA_URL} target="_blank" rel="nofollow noopener">Download</a>
-          </div>
         </div>
-            <link rel="preload" as="image" href="/bdg-girl.png" />
-            <Image src="/bdg-girl.png" alt="BDG Game Download and Login Bonus" className="mx-auto mt-10 rounded-2xl border border-gold-100" priority width="1200" height="630"/>
+        <link rel="preload" as="image" href="/bdg-girl.png" />
+        <Image 
+          src="/bdg-girl.png" 
+          alt="BDG Win Game - Beautiful girl showcasing the gaming platform with golden theme and bonus offers" 
+          className="mx-auto mt-10 rounded-2xl border border-gold-100 shadow-lg" 
+          priority 
+          width="1200" 
+          height="630"
+        />
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+          <CTA label="Play Now & Claim ₹500 Bonus" />
+          <a className="btn-gold" href={CTA_URL} target="_blank" rel="nofollow noopener">Login</a>
+          <a className="btn-gold" href={CTA_URL} target="_blank" rel="nofollow noopener">Download</a>
+        </div>
       </section>
 
       <section className="grid md:grid-cols-2 gap-8 mt-8">
