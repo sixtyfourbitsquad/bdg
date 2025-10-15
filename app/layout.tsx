@@ -2,6 +2,7 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingButton from '@/components/FloatingButton';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata = { 
   metadataBase: new URL('https://bdgwinngames.com'),
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="mx-auto max-w-6xl px-4">{children}</main>
         <Footer />
         <FloatingButton />
+        <SpeedInsights />
       </body>
     </html>
   );
