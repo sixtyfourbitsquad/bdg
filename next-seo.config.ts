@@ -24,9 +24,9 @@ const keywords = [
 ];
 
 const config: DefaultSeoProps = {
-  defaultTitle: 'BDG Win Game — Official Login, Download App & ₹300 Bonus',
+  defaultTitle: 'BDG Win Game — Official Login, Download App & ₹500 Bonus',
   titleTemplate: '%s | BDG Win Game India',
-  description: 'BDG Win Game (Big Daddy Game) — official info hub for login, download, bonus, colour prediction and withdrawals in India. Register now and claim your ₹300 bonus.',
+  description: 'BDG Win Game (Big Daddy Game) — official info hub for login, download, bonus, colour prediction and withdrawals in India. Register now and claim your ₹500 bonus.',
   canonical: 'https://bdgwinngames.com',
   additionalMetaTags: [
     { name:'keywords', content: keywords.join(', ') },

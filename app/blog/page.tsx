@@ -33,7 +33,7 @@ export default function BlogIndex(){
 
       <div className="mt-12 text-center">
         <h2 className="text-2xl font-bold mb-4">Ready to Start Playing BDG?</h2>
-        <CTA label="Register & Get ₹300 Bonus" />
+        <CTA label="Register & Get ₹500 Bonus" />
       </div>
     </section>
   );

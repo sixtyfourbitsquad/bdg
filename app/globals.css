@@ -21,3 +21,18 @@ body {
 .card { 
   @apply rounded-2xl border border-gold-100/60 bg-white/70 backdrop-blur p-6 shadow-sm; 
 }
+
+/* Floating button animations */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.floating-button {
+  animation: float 3s ease-in-out infinite;
+}

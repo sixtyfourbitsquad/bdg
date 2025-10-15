@@ -53,7 +53,7 @@ export default function FAQ(){
 
       <div className="mt-12 text-center">
         <h2 className="text-2xl font-bold mb-4">Ready to Start Playing?</h2>
-        <CTA label="Register & Claim ₹300 Bonus" />
+        <CTA label="Register & Claim ₹500 Bonus" />
       </div>
 
       <JsonLd json={json} />

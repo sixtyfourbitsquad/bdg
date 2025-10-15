@@ -18,13 +18,13 @@ export default function Page(){
       <section className="pt-16 pb-10">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
-            BDG Game Download App | ₹300 Bonus | Official Login
+            BDG Game Download App | ₹500 Bonus | Official Login
           </h1>
           <p className="mt-5 text-lg opacity-80">
             Download BDG Win Game in India. Fast login, signup bonus, colour prediction results, and secure withdrawals.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <CTA label="Play Now & Claim ₹300 Bonus" />
+            <CTA label="Play Now & Claim ₹500 Bonus" />
             <a className="btn-gold" href={CTA_URL} target="_blank" rel="nofollow noopener">Login</a>
             <a className="btn-gold" href={CTA_URL} target="_blank" rel="nofollow noopener">Download</a>
           </div>

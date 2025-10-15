@@ -1,6 +1,6 @@
 export const CTA_URL = 'https://bdgwina.co//#/register?invitationCode=3422740317';
 
-export default function CTA({ label='Register & Claim ₹300 Bonus', className='' }:{
+export default function CTA({ label='Register & Claim ₹500 Bonus', className='' }:{
   label?: string; className?: string;
 }) {
   return (
