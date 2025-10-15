@@ -9,9 +9,9 @@ export default function Header(){
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gold-100 shadow-sm">
-      <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-          <div className="relative">
+      <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between min-h-[60px]">
+        <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity min-w-0">
+          <div className="relative flex-shrink-0">
             <Image 
               src="/logo.png" 
               alt="BDG Win Game Logo" 
@@ -22,7 +22,7 @@ export default function Header(){
             />
             <div className="absolute inset-0 bg-gradient-to-r from-gold-400 to-gold-600 rounded-lg opacity-20 animate-pulse"></div>
           </div>
-          <span className="font-bold tracking-wide text-lg bg-gradient-to-r from-gold-600 to-gold-800 bg-clip-text text-transparent">
+          <span className="font-bold tracking-wide text-lg text-gold-700 whitespace-nowrap">
             BDG Win Game
           </span>
         </Link>
