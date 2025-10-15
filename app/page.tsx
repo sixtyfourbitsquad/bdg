@@ -29,8 +29,8 @@ export default function Page(){
             <a className="btn-gold" href={CTA_URL} target="_blank" rel="nofollow noopener">Download</a>
           </div>
         </div>
-        <link rel="preload" as="image" href="/og-image.jpg" />
-        <Image src="/og-image.jpg" alt="BDG Game Download and Login Bonus" className="mx-auto mt-10 rounded-2xl border border-gold-100" priority width="1200" height="630"/>
+            <link rel="preload" as="image" href="/bdg-girl.png" />
+            <Image src="/bdg-girl.png" alt="BDG Game Download and Login Bonus" className="mx-auto mt-10 rounded-2xl border border-gold-100" priority width="1200" height="630"/>
       </section>
 
       <section className="grid md:grid-cols-2 gap-8 mt-8">
