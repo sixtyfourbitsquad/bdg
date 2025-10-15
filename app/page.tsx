@@ -17,6 +17,50 @@ export default function Page(){
     <>
       <section className="pt-16 pb-10">
         <div className="text-center max-w-3xl mx-auto">
+          {/* Top Action Buttons */}
+          <div className="mb-8 flex flex-wrap items-center justify-center gap-4">
+            {/* Login Button */}
+            <a
+              href={CTA_URL}
+              target="_blank"
+              rel="nofollow noopener"
+              className="shine-button relative group px-6 py-3 rounded-xl font-bold text-sm transition-all duration-300 overflow-hidden"
+              style={{
+                background: 'linear-gradient(135deg, #F59E0B 0%, #D4AF37 50%, #F59E0B 100%)',
+                backgroundSize: '200% 100%',
+                animation: 'shimmer 3s infinite, pulse-glow 2s ease-in-out infinite',
+                boxShadow: '0 6px 20px rgba(212, 175, 55, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.1)'
+              }}
+            >
+              <span className="relative z-10 text-white font-bold flex items-center gap-2">
+                <span>🔑</span>
+                <span>Login</span>
+              </span>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-20 transition-opacity duration-300 transform -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+            </a>
+
+            {/* Register Button */}
+            <a
+              href={CTA_URL}
+              target="_blank"
+              rel="nofollow noopener"
+              className="shine-button relative group px-8 py-3 rounded-xl font-bold text-sm transition-all duration-300 overflow-hidden transform hover:scale-105"
+              style={{
+                background: 'linear-gradient(135deg, #D4AF37 0%, #F59E0B 25%, #D4AF37 50%, #F59E0B 75%, #D4AF37 100%)',
+                backgroundSize: '300% 100%',
+                animation: 'shimmer 2s infinite, pulse-glow 1.5s ease-in-out infinite',
+                boxShadow: '0 8px 25px rgba(212, 175, 55, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1)'
+              }}
+            >
+              <span className="relative z-10 text-white font-bold flex items-center gap-2">
+                <span>🎁</span>
+                <span>Register</span>
+              </span>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 transition-opacity duration-300 transform -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-gold-300 to-gold-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+            </a>
+          </div>
+
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
             BDG Game Download App | ₹500 Bonus | Official Login
           </h1>
